@@ -41,6 +41,16 @@ for i in input_list:
     os.system("sudo docker run --rm -v ${PWD}:/results -w /results -u $(id -u ${USER}):$(id -g ${USER}) pharmai/plip:latest -f " + i + " -yv -o " + output_dir + "/" + i.replace(".pdb","") + "/ -x -t -y -p")
 
 ### Report to csv table
+### Interactions
+### - Hydrophobic Interaction
+### - Hydrogen Bond
+### - Water Bridges
+### - pi-Stacking (parallel)
+### - pi-Stacking (perpendicular)
+### - pi-Cation Interaction
+### - Halogen Bond
+### - Salt Bridge
+### - Metal Complex
 f = open(output_dir + "/plip_value_table.csv")
 f.write("PDB,Interaction_type,RESNR,RESTYPE,DIST,DIST_sub\n")
 for i in range(0,len(input_list)):

@@ -3,12 +3,12 @@
 Protein Ligand Interactions Profiling
 
 ### Install Docker Image
-```
+```sh
 docker pull pharmai/plip
 ```
 
 ### Command
-```
+```sh
 sudo docker run --rm -v ${PWD}:/results -w /results -u $(id -u ${USER}):$(id -g ${USER}) pharmai/plip:latest -f target.pdb -yv -o output_dir/ -x -t -y -p
 ```
 
