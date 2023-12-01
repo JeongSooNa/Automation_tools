@@ -18,6 +18,7 @@ input_list = os.listdir(input_dir)
 output_dir = sys.argv[2]
 print("pdb number : " + str(len(input_list)))
 
+# 안돼 이동
 os.chdir(input_dir)
 
 ### Make directory per pdb
