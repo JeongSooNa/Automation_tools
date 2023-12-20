@@ -34,3 +34,6 @@ for j in data:
 
 
 os.chdir(current_path)
+
+
+### How to calculate RMSD or get value in gnina raw script or options?
